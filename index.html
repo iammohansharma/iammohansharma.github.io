@@ -1,3 +1,5 @@
+
+   
 <!DOCTYPE html>
 <!-- Created By CodingNepal -->
 <html lang="en">
@@ -224,16 +226,12 @@
 <script>
     function sentmail(){
 
-        var name = $('#name').val();
-        var email = $('#email').val();
-        var subject = $('#subject').val();
-        var message = $('#msg').val();
         Email.send({
     Host : "smtp.elasticemail.com",
     Username : "dataentry3443@gmail.com",
     Password : "A3E6BED701A1F66237C41F1E175CA2413138",
-    To : "mohansharma3443@gmail.com",
-    From : document.getElementById("email"),
+    To : 'mohansharma3443@gmail.com',
+    From : document.getElementById("email").value,
     Subject : "New contact form Enquiry",
     Body : "And this is the body"
 }).then(
@@ -246,3 +244,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
